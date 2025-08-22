@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELICIOUS BITES - Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DELICIOUS BITES</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="order.html">ORDER</a>
+            <a href="payment.html">PAYMENT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Order Items:</label>
+                    <div class="order-items">
+                        <div class="item">
+                            <select class="item-select">
+                                <option value="">Select an item...</option>
+                                <option value="Grilled Salmon">Grilled Salmon - $18.99</option>
+                                <option value="Beef Tenderloin">Beef Tenderloin - $24.99</option>
+                                <option value="Water">Mineral Water - $2.50</option>
+                                <option value="Coffee">Coffee - $3.50</option>
+                                <option value="Juice">Fresh Juice - $4.50</option>
+                                <option value="Wine">House Wine - $7.00</option>
+                                <option value="Beer">Imported Beer - $6.00</option>
+                            </select>
+                            <input type="number" class="quantity" min="1" value="1">
+                            <button type="button" class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addItem">Add Another Item</button>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">Special Instructions:</label>
+                    <textarea id="notes" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group age-verify" id="ageVerify" style="display: none;">
+                    <label>
+                        <input type="checkbox" id="ageCheck"> I confirm I am 18 years or older
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BEVERAGE HAVEN. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

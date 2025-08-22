@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELICIOUS BITES - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DELICIOUS BITES</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="order.html">ORDER</a>
+            <a href="payment.html">PAYMENT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment">
+            <h2>Payment Options</h2>
+            
+            <div class="payment-methods">
+                <div class="method active" id="card">
+                    <h3>Credit/Debit Card</h3>
+                    <form id="cardForm">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number:</label>
+                            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardName">Name on Card:</label>
+                            <input type="text" id="cardName" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date:</label>
+                                <input type="text" id="expiry" placeholder="MM/YY" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn">Pay Now</button>
+                    </form>
+                </div>
+                
+                <div class="method" id="cash">
+                    <h3>Cash on Delivery</h3>
+                    <p>Pay with cash when your order arrives</p>
+                    <button class="btn">Select This Option</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Delicious Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
